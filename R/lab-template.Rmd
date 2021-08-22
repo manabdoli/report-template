@@ -1,0 +1,123 @@
+---
+title: |
+  | Rmarkdown-Template for Labs
+  | CSUF - Math Dept.
+author: "Name of Participants (can be multiple line like title)"
+date: "8/21/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction / Problem Definition
+
+The goal of this report is to show case formatting syntax of R Markdown for authoring lab reports. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+## Prerequisites
+
+To be able to use R Markdown, an installation of R software is essential; use one of these [CRAN Mirrors](https://cran.r-project.org/mirrors.html) to find an appropriate installation file.
+
+Although not necessary, it is highly recommended that RStudio, an integrated development environment (IDE) for R (and Python!), is also installed: the free [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/) version is sufficient.
+
+Finally, if not installed, these packages need to be installed:
+
+-   knitr
+-   rmarkdown
+
+The following code **chunk**, named `loadPackages` shows how to run an R code to perform some tasks, and generate some outputs for inclusion in the final document.
+
+```{r loadPackages}
+cat('Loading knit and rmarkdown packages . . .')
+if(!require("knitr")){
+  # if failed to load knitr, install it
+  install.packages("knitr")
+  # then load it
+  library("knitr")
+}
+if(!require("rmarkdown")){
+  # if failed to load rmarkdown, install it
+  install.packages("rmarkdown")
+  # then load it
+  library("rmarkdown")
+}
+cat('Loading knit and rmarkdown packages done.\n')
+```
+
+> NOTE: These packages are not required to be loaded explicitly in an R Markdown file, since they are only used to turn an R Markdown file into a PDF or HTML. In Rstudio, the conversion is automatically performed via **knit** button located on the top of the code pane.
+
+There are many other packages that are used in pre-processing, summarizing, and visualizing data, or performing statistical analysis; those packages can be loaded in the beginning of the file or are needed.
+
+# Capabilities
+
+So far, we have seen how code and text can be combined in an R Markdown text file (having a file extension of Rmd) to create a document.
+
+In the rest of this template, examples of other capabilities are shown. In these examples, it is assumed that the document is generated in Rstudio.
+
+## Adding an Image
+
+The following image shows the folder structure used for this lab-template:
+
+![Folder Strucrure](../img/FolderStructure.png)
+
+This Rmd file is located in `R` folder, image files used here (like the one above) are located in `img` folder, data files are located in `data` folder. All these folders are are located under `Lab-Folder`.
+
+Instead of embedding an image, a link to it can be provided; here is a link to the same [Folder Strucrure](../img/FolderStructure.png).
+
+## Adding formula
+
+Simple LaTeX commands can be used as inline formulas, like $\hat y = b_0 + b_1 x$, or displayed formulas $$\bar x = \sum_{i=1}^n \frac{x_i}{n}.$$
+
+Images of formulas, be it produced by online tools (like [atomurl.net/math](http://atomurl.net/math/)) or handwritten, could be a quick substitute for typing equations for novices.
+
+## Data Structure and Summaries
+
+There are many internal datasets in R that can be used right away; for example, `cars` contains the information on speed and stopping distance of some cars from 1977. Here is how to show the structure of the dataset:
+
+```{r cars-structure}
+str(cars)
+```
+
+and its summaries:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+Another example of an internal dataset is `pressure` that contains vapor pressure of mercury as a function of temperature. The following code chunk shows how a plot can be produced while printing of the code is prevented by adding `echo=FALSE` option.
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+## Reading Data
+
+When an external is needed to be used, R can read data from a local file; for example:
+
+```{r}
+x = read.csv(file = '../data/CheeseTaste.csv', header = TRUE) 
+head(x)
+```
+
+R can also read files online from a given url; for example, `bac` (bear alcohol content) is a CSV file on OpenIntro site:
+
+```{r}
+y = read.csv(file = 'https://www.openintro.org/data/csv/bac.csv', 
+             header = TRUE)
+
+```
+
+# Conclusion
+
+R markdown is a flexible and powerful tool for generating reproducible documents.
+
+This tool can produce reports in HTML, PDF and even (perhaps) MS Word formats.
+
+ 
+
+ 
+
+\
