@@ -5,19 +5,24 @@ title: |
 author: "Mansour Abdoli, PhD"
 date: "8/21/2021"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
   word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
+# This is a R `code chunk`;
+#   'setup' is the name of code chunk
+#      (This name is not needed; but if used, it has to be unique)
+#   'include=FALSE' is so that the code and the results are not included in the final document.
 knitr::opts_chunk$set(echo = TRUE)
+# The above line sets the default for all code chunks to 'echo', which means show the codes and the results in the final document. 
 ```
 
 # Introduction
 
-The goal of this document is to show what you may need to generate a document using R Markdown, a file with Rmd extension. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The goal of this document is to show what you may need to generate a document using an R Markdown, a file with Rmd extension. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 ## Prerequisites
 
@@ -35,6 +40,7 @@ Those may need other packages, including *evaluate, digest, highr, markdown, yam
 The following code **chunk**, named `installPreReq`, install those packages and other requirements that could come handy:
 
 ```{r installPreReq, eval=FALSE}
+# 'eval=FALSE' means do not run this code chunk.
 install.packages("installr")
 library(installr)
 install.Rtools()
@@ -44,32 +50,11 @@ install.packages(c('evaluate', 'digest', 'highr', 'markdown', 'yaml',
                     'mime', 'rmarkdown'))
 ```
 
-The following code **chunk**, named `loadPackages` shows how to run an R code to perform some tasks, and generate some outputs for inclusion in the final document.
-
-When these are installed, RStudio shows the **Knit** button that starts the process of converting an Rmd file into a HTML, PDF or MS Word file. 
-
-
-
-```{r loadPackages}
-cat('Loading knit and rmarkdown packages . . .')
-if(!require("knitr")){
-  # if failed to load knitr, install it
-  install.packages("knitr")
-  # then load it
-  library("knitr")
-}
-if(!require("rmarkdown")){
-  # if failed to load rmarkdown, install it
-  install.packages("rmarkdown")
-  # then load it
-  library("rmarkdown")
-}
-cat('Loading knit and rmarkdown packages done.\n')
-```
+When these are installed, RStudio shows the **Knit** button on top of the script editor window. The *knit* button can be used to start the process of converting an Rmd file into a HTML, PDF or MS Word file. 
 
 # Capabilities
 
-The text shown above is an example of how code and text can be combined in an Rmd file to create a document.
+The above section of this document presented examples of including R codes, adding hyperlink, and creating a document structure with text headings using `#` and `##` marks.
 
 In the rest of this document, examples of other capabilities of R Markdown are shown. In these examples, it is assumed that the document is generated in Rstudio.
 
@@ -81,7 +66,7 @@ The following image shows the folder structure used for this lab-template:
 
 This Rmd file is located in `R` folder, image files used here (like the one above) are located in `img` folder, data files are located in `data` folder. All these folders are are located under `Lab-Folder`.
 
-Instead of embedding an image, a link to it can be provided; here is a link to the same [Folder Strucrure](../img/FolderStructure.png).
+Instead of embedding an image, a link to it can be provided; here is a link to the same [Folder Strucrure image](../img/FolderStructure.png).
 
 ## Adding formula
 
@@ -135,8 +120,9 @@ R markdown is a flexible and powerful tool for generating reproducible documents
 This tool can produce reports in HTML, PDF and even (perhaps) MS Word formats. However, 
 
 
-
- 
+```{r, include=FALSE}
+# The following backward slashes are added to create extra line at the end of a document. This can help when viewing an HTML file. 
+```
 
  
 
