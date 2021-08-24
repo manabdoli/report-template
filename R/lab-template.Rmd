@@ -12,7 +12,7 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE) 
 # All the required libraries
-
+# install.packages(tidyverse)  # if needed
 library(tidyverse)
 
 ```
