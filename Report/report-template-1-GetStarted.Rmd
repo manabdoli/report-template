@@ -1,0 +1,119 @@
+---
+title: | 
+  | Rmarkdown-Template for Project and Lab Reports 
+  | Get Started
+# The multi line title does not work for WORD output
+subtitle: Math 338 (CSUF - Math Dept.)
+
+author: "Author's Name(s)"
+date: "2/7/2024 (Last Updated: `r Sys.Date()`)"
+# you may choose different output type; the HTML is most straight forward
+
+output:
+  html_document:
+    df_print: paged
+
+# To use WORD or PDF, replace the above output lines with one of the following.
+
+# output: word_document
+# output: pdf_document
+
+## To use PDF or WORD, uou need to have latex engin installed. 
+## A quick way to install it would be to install "tinytex" and then
+## use it to install tex-live by this command: "tinytex::install_tinytex()"
+
+
+---
+
+```{r setup, include=FALSE}
+# This grey area is called a code chunk, and includes R codes
+
+# This next line turn the code off:
+## This means the codes are not shown in the report
+knitr::opts_chunk$set(echo = TRUE) 
+
+## knitr is a library which is needed for RMarkdown to work. 
+## You may have to install more libraries.
+## Rstudio should inform you and install required libraries automatically.
+
+```
+
+> This template create the structure of a typical report for Math 338, and perhaps other statistical reports.
+
+> The default setting will produce a HTML file. Comments are added to provide alternatives, in terms of output format and other features like including image in a document.
+
+
+## Introduction
+
+Clarify the purpose of the report; clarify the problem being investigated, source of the data used, and other general information.
+
+### Data
+Provide details about the data structure, including _subjects (cases)_ studied and _variables_ collected, and variable types.
+
+### Parameters of Interest (Models)
+Formulate your questions using parameters (e.g. mean or proportion). Questions can be formulated as a test of hypothesis or a confidence interval.
+
+The rest of report up to conclusion can be repeated for each question, or each section can include the necessary steps for all questions, or a combination of both.
+
+## Explanatory Analysis/Descriptive Analysis
+Use graphs and summary numbers or tables that describe one or more variables. These descriptive analysis should help you form an opinion about the answer and determine the solution approach.
+
+
+### Adding Image
+One benefit of using `RMarkdown` is that we can perform all data analysis and insert the results as image or table in the document, however, it needs some `R` coding skills.
+
+Since you can produce all the graphs and tables using `Rguroo`, all you may need is to add images to the document. The following shows different ways for adding existing images (from local files `ocGasSample.png` and `ocGasSampleDotPlot.png`) into the document:
+
+#### Using Markdown Syntax `![]()`
+The following image is inserted with a height of 200px and width of 300px, and a caption of _Histogram: 35 OC Gas Prices_:
+
+
+![Histogram: 35 OC Gas Prices](ocGasSample.png){height=200px width=300px}.
+
+
+> The caption is not shown.
+
+### Using `knitr::include_graphics()`:
+
+The characteristics of the output graph is defined in the chunk options:
+
+```{r, echo=FALSE, fig.cap="Dotplot of OC Gas Price Sample", fig.align='right', fig.width=2, fig.height=1}
+knitr::include_graphics(path = "ocGasSample.svg")
+```
+
+
+> The caption is located on the bottom-right side of the graph.
+
+
+#### Using HTML `<img/>` TAG (Only works in HTML OUTPUT)
+
+The example below sets the width of "ocGasSample.svg" image to be in the center of the window and occupy 50% of it, and adds a caption of "_Gas Price Histogram_" and an alternative text of "_A skewed left histogram_":
+
+<img src="ocGasSample.svg" alt="A skewed left histogram" width=50%, 
+align="center" caption="Gas Price Histogram"/>.
+
+
+> The caption is not shown.
+
+
+
+## Inferential Analysis
+Use _confidence interval_ or _test of hypothesis_ to extended the information obtain from your (sampled) data to the population of interest.
+
+### Diagnosis Analysis for Assumptions Validation
+Check the assumptions and conditions that your inferential method uses. 
+Check sample size effect and find proper sample size.
+
+## Conclusion & Future Study
+
+Use the results to make a conclusion about the question by answering the question, and reiterating whether the results can be applied to a larger population, as you expected.
+
+Determine any future directions for expanding the study, or rerunning it correctly.
+
+\
+
+\
+
+\
+
+
