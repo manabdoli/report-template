@@ -1,12 +1,12 @@
 ---
 title: | 
   | Rmarkdown-Template for Project and Lab Reports 
-  | Get Started
+  | Reading Presenting Data Structure
 # The multi line title does not work for WORD output
 subtitle: Math 338 (CSUF - Math Dept.)
 
 author: "Author's Name(s)"
-date: "2/7/2024 (Last Updated: `r Sys.Date()`)"
+date: "2/9/2024 (Last Updated: `r Sys.Date()`)"
 # you may choose different output type; the HTML is most straight forward
 
 output:
@@ -28,91 +28,73 @@ output:
 ```{r setup, include=FALSE}
 # This grey area is called a code chunk, and includes R codes
 
-# This next line turn the code off:
+# This next line turn the code off in the final document:
 ## This means the codes are not shown in the report
 knitr::opts_chunk$set(echo = TRUE) 
 
 # tidyverse is a group of library providing a convenient way of programming R 
 ## The following code tries to load the package
-if(!require(tidyverse)){
-  # If the package is not loaded, the next code installs it
-  install.packages(tidyverse)
-  # And now it loads it   (`library` fails if it does not exist, unlike `require`)
-  library(tidyverse)
-} 
+# if(!require(tidyverse)){
+#   # If the package is not loaded, the next code installs it
+#   install.packages(tidyverse)
+#   # And now it loads it   (`library` fails if it does not exist, unlike `require`)
+#   library(tidyverse)
+# } 
+
 ```
 
-> This template create the structure of a typical report for Math 338, and perhaps other statistical reports.
-
-> The default setting will produce a HTML file. Comments are added to provide alternatives, in terms of output format and other features like including image in a document.
 
 
 ## Introduction
 
-Clarify the purpose of the report; clarify the problem being investigated, source of the data used, and other general information.
+This version of the template shows how to read a data set and show its structre. These can be used to determine the type of variables (categorical or numerical). The data structure should also show how it helps answering our question through the response variable and parameter of interest. 
+
+As an example, let's use the `cereal2` dataset and use it see if the Manufacturer and Shelf are dependent.
+
 
 ### Data
-Provide details about the data structure, including _subjects (cases)_ studied and _variables_ collected, and variable types.
+The `cereal2` dataset is collected from an Albertson store in 2019. 
 
-### Parameters of Interest (Models)
-Formulate your questions using parameters (e.g. mean or proportion). Questions can be formulated as a test of hypothesis or a confidence interval.
-
-The rest of report up to conclusion can be repeated for each question, or each section can include the necessary steps for all questions, or a combination of both.
-
-## Explanatory Analysis/Descriptive Analysis
-Use graphs and summary numbers or tables that describe one or more variables. These descriptive analysis should help you form an opinion about the answer and determine the solution approach.
-
-
-### Adding Image
-One benefit of using `RMarkdown` is that we can perform all data analysis and insert the results as image or table in the document, however, it needs some `R` coding skills.
-
-Since you can produce all the graphs and tables using `Rguroo`, all you may need is to add images to the document. The following shows different ways for adding existing images (from local files `ocGasSample.png` and `ocGasSampleDotPlot.png`) into the document:
-
-#### Using Markdown Syntax `![]()`
-The following image is inserted with a height of 200px and width of 300px, and a caption of _Histogram: 35 OC Gas Prices_:
-
-
-![Histogram: 35 OC Gas Prices](ocGasSample.png){height=200px width=300px}.
-
-
-> The caption is not shown.
-
-### Using `knitr::include_graphics()`:
-
-The characteristics of the output graph is defined in the chunk options:
-
-```{r, echo=FALSE, fig.cap="Dotplot of OC Gas Price Sample", fig.align='right', fig.width=2, fig.height=1}
-knitr::include_graphics(path = "ocGasSample.svg")
+```{r, echo=TRUE}
+# This code reads the dataset from a local CSV file:
+cerealDS <- read.csv(file = 'cereal2.csv', header = TRUE) 
+# this line shows the size of the dataset:
+dim(cerealDS)
 ```
 
+The dataset has 14 variables and 88 observations. Each observation is about a box (a case is a cereal box).
 
-> The caption is located on the bottom-right side of the graph.
+```{r, echo=TRUE}
+# This code shows the list of variables
+names(cerealDS)  # also `colnames(cerealDS)` works
+```
+For the question that we are dealing with, the important variables are `Manufacturer` and `Shelf`, both of which are categorical. Here are the first few observations for these variables:
+
+```{r, echo=TRUE}
+head(cerealDS[c("Manufacturer", "Shelf")])
+```
+
+The above table, also shows the type of the variables, which in this case both are character (not numeric), and thus categorical.
 
 
-#### Using HTML `<img/>` TAG (Only works in HTML OUTPUT)
+### Parameters of Interest (Models)
+For the purpose of answering our question, we consider `Shelf` as response and `Manufacturer` as explanatory. The parameters that we will use to answer the question would be the proportion of response levels (shelf locations) given the explanatory levels (manufacturers).
 
-The example below sets the width of "ocGasSample.svg" image to be in the center of the window and occupy 50% of it, and adds a caption of "_Gas Price Histogram_" and an alternative text of "_A skewed left histogram_":
-
-<img src="ocGasSample.svg" alt="A skewed left histogram" width=50%, 
-align="center" caption="Gas Price Histogram"/>.
-
-
-> The caption is not shown.
-
+## Explanatory Analysis/Descriptive Analysis
+Here you can add images of bar plot for each variable to learn about each variable, and a stacked bar plot to show association of the two variable.
 
 
 ## Inferential Analysis
-Use _confidence interval_ or _test of hypothesis_ to extended the information obtain from your (sampled) data to the population of interest.
+TO BE COMPLETED LATER
 
-### Diagnosis Analysis for Assumptions Validation
-Check the assumptions and conditions that your inferential method uses. 
-Check sample size effect and find proper sample size.
 
-## Conclusion & Future Study
+## Conclusion
 
-Use the results to make a conclusion about the question by answering the question, and reiterating whether the results can be applied to a larger population, as you expected.
+TO BE COMPLETED LATER
 
-Determine any future directions for expanding the study, or rerunning it correctly.
+### Future Study
+
+TO BE COMPLETED LATER
 
 \
 

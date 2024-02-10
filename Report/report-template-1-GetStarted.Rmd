@@ -28,7 +28,7 @@ output:
 ```{r setup, include=FALSE}
 # This grey area is called a code chunk, and includes R codes
 
-# This next line turn the code off:
+# This next line turn the code off in the final document:
 ## This means the codes are not shown in the report
 knitr::opts_chunk$set(echo = TRUE) 
 
@@ -104,10 +104,11 @@ Use _confidence interval_ or _test of hypothesis_ to extended the information ob
 Check the assumptions and conditions that your inferential method uses. 
 Check sample size effect and find proper sample size.
 
-## Conclusion & Future Study
+## Conclusion
 
 Use the results to make a conclusion about the question by answering the question, and reiterating whether the results can be applied to a larger population, as you expected.
 
+### Future Study
 Determine any future directions for expanding the study, or rerunning it correctly.
 
 \

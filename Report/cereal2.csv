@@ -1,0 +1,89 @@
+Cereal.Name,Manufacturer,Size,Shelf,Price,Serving.Size,Calories,Total.Fat,Saturated.Fat,Sodium,Total.Carbohydrate,Dietary.Fiber,Sugar,Protein
+All-Bran Buds,Kelloggs,17.7,middle_top,5.99,30,80,1,0,210,24,11,8,3
+All-Bran Original,Kelloggs,18.3,middle_top,6.49,31,80,1,0,80,23,10,6,4
+Apple Jacks,Kelloggs,10.1,middle_top,4.99,29,110,1,0.5,150,25,3,10,2
+Basic 4,General Mills,16,top,5.29,55,200,2,1,280,43,5,12,4
+Blueberry Chex,General Mills,12,middle_top,5.29,30,130,2.5,0,190,24,1,6,1
+Cap'n Crunch,Quaker,14,bottom_middle,5.19,27,110,1.5,1,210,23,0,12,1
+Cheerios,General Mills,12,middle_top,4.99,28,100,2,0.5,140,20,3,1,3
+Cheerios Oat Crunch,General Mills,15.2,bottom_middle,4.99,51,200,4.5,0.5,220,40,4,14,3
+Chips Ahoy Cereal,Post,12,top,4.79,29,120,2,0,120,24,0,11,1
+Chocolate Chex,General Mills,12.8,middle_top,5.29,32,130,2.5,0.5,200,26,1,8,2
+Chocolate Frosted Flakes,Kelloggs,13.2,middle_top,4.99,29,110,1,0.5,160,25,0,10,2
+Cinnamon Chex,General Mills,12.1,middle_top,5.29,30,120,2.5,0,180,24,1,6,1
+Cinnamon Frosted Flakes,Kelloggs,13.6,middle_top,4.99,29,110,0,0,150,26,0,10,1
+Cinnamon Toast Crunch,General Mills,12,middle,4.99,31,130,3,0.5,180,25,2,9,1
+Cocoa Krispies,Kelloggs,15.5,bottom_middle,4.99,31,120,1,0.5,120,27,0,12,1
+Cocoa Pebbles,Post,11,middle_top,4.49,29,120,1,1,170,25,0,10,1
+Cocoa Puffs,General Mills,11.8,middle,4.79,27,100,1.5,0,100,23,1,9,1
+Cookie Crisp,General Mills,11.25,bottom_middle,4.99,36,140,1.5,0,150,31,2,12,2
+Corn Chex,General Mills,12,bottom_middle,5.29,31,120,0.5,0,220,26,2,3,2
+Corn Flakes,Kelloggs,12,bottom,4.29,28,100,0,0,200,24,1,3,2
+Corn Pops,Kelloggs,10,middle_top,4.99,40,150,0,0,140,36,0,12,2
+Cracklin' Oat Bran,Kelloggs,17,middle_top,5.99,56,230,8,3.5,65,41,7,16,4
+Crispix,Kelloggs,12,middle_top,5.29,39,150,0,0,250,34,0,5,3
+Crunch Berries,Quaker,13,bottom_middle,5.19,26,100,1.5,0.5,190,22,0,11,1
+Fiber One,General Mills,16.2,top,5.79,30,60,1,0,110,25,14,0,2
+French Toast Crunch,General Mills,11.6,middle_top,4.99,28,110,2,0,140,24,1,9,1
+Froot Loops,Kelloggs,10.1,middle_top,4.99,29,110,1,0.5,150,25,3,10,2
+Frosted Flakes,Kelloggs,13.5,bottom_middle,4.99,29,110,0,0,150,26,0,10,1
+Frosted Mini-Wheats Blueberry,Kelloggs,15.5,middle_top,5.29,60,210,1,0,10,51,6,13,5
+Frosted Mini-Wheats Little Bites Chocolate,Kelloggs,15.2,top,5.29,56,200,2,1,220,45,6,12,5
+Frosted Mini-Wheats Little Bites Original,Kelloggs,15.2,top,5.29,56,190,1,0,10,47,6,11,5
+Frosted Mini-Wheats Original,Kelloggs,18,middle,5.29,60,210,1.5,0,10,51,6,12,5
+Frosted Mini-Wheats Strawberry,Kelloggs,15.5,middle_top,5.29,60,210,1,0,10,51,6,13,5
+Fruity Pebbles,Post,11,bottom_middle,4.49,27,110,1,1,140,23,0,9,1
+Golden Crisp,Post,14.75,top,4.49,29,110,0,0,65,26,0,16,2
+Golden Grahams,General Mills,11.7,bottom,4.99,30,110,1,0,230,25,1,9,2
+Golden Oreo O's,Post,11,top,4.79,29,120,1.5,0,115,25,0,13,1
+Grape-Nuts,Post,20.5,bottom_middle,5.59,58,200,1,0,280,47,7,5,6
+Grape-Nuts Flakes,Post,18,bottom,5.59,43,150,1.5,0,200,34,5,7,4
+Great Grains Cranberry Almond Crunch,Post,14,middle_top,5.59,56,210,3,0,190,44,6,12,5
+Honey Bunches of Oats,Post,14.5,bottom_middle,4.99,30,120,1.5,0,135,25,2,6,2
+Honey Bunches of Oats with Almonds,Post,14.5,middle,4.99,32,130,2.5,0,135,26,2,6,2
+Honey Bunches of Oats with Real Strawberries,Post,13,middle_top,4.99,31,120,1.5,0,125,26,2,8,2
+Honey Maid S'mores Cereal,Post,12.25,top,4.79,30,120,2.5,0.5,210,24,1,12,1
+Honey Nut Cheerios,General Mills,10.8,top,4.49,28,110,1.5,0,160,22,2,9,2
+Honey Nut Chex,General Mills,12.5,middle_top,5.29,32,120,0.5,0,200,28,1,9,2
+Honey Nut Frosted Flakes,Kelloggs,13.7,middle_top,4.99,29,110,0,0,150,26,0,10,1
+Honey Oh!s,Post,10.5,bottom_middle,3.49,40,170,3,0,240,34,0,18,2
+Honeycomb,Post,12.5,middle,4.49,32,130,1,0,150,28,0,10,2
+Hostess Donettes Cereal,Post,11,top,4.79,33,150,6,5,115,24,0,13,0
+Kellogg's Raisin Bran,Kelloggs,18.7,middle_top,4.99,59,190,1,0,200,47,7,9,5
+Kix,General Mills,12,bottom,4.99,30,110,1,0,180,25,3,3,2
+Krave Chocolate,Kelloggs,11.4,top,4.99,53,220,6,1.5,170,40,5,19,4
+Life Cinnamon,Quaker,13,middle,4.19,32,120,1.5,0,150,25,2,8,3
+Life Original,Quaker,13,bottom_middle,4.19,32,120,1.5,0,160,25,2,6,3
+Life Strawberry,Quaker,13,middle,4.19,32,120,1.5,0,160,25,2,6,3
+Life Vanilla,Quaker,13,middle,4.19,32,120,1.5,0,160,25,2,6,3
+Lucky Charms,General Mills,10.5,middle_top,4.99,27,110,1,0,170,22,2,10,2
+Multi Grain Cheerios,General Mills,12,top,5.49,29,110,1.5,0,115,24,3,6,2
+Nilla Banana Pudding Cereal,Post,12,top,4.79,32,130,2,0,120,28,0,14,1
+Nutter Butter Cereal,Post,11,top,4.79,33,150,4.5,0.5,160,25,0,13,2
+OOPS! All Berries,Quaker,11.5,middle,5.19,32,130,1.5,1,200,28,0,14,1
+Oreo O's,Post,11,top,4.79,30,120,1.5,0,150,25,1,13,1
+Peanut Butter Crunch,Quaker,12.5,middle,5.19,27,110,2.5,0.5,200,21,0,9,2
+Post Raisin Bran,Post,20,top,5.59,61,190,1,0,240,48,9,20,5
+Quaker Oatmeal Squares Brown Sugar,Quaker,14.5,middle,5.69,56,210,2.5,0.5,190,44,5,9,6
+Raisin Bran Crunch,Kelloggs,18.2,bottom_middle,4.99,55,190,1,0,200,46,4,13,4
+Raisin Nut Bran,General Mills,17.1,top,5.29,49,180,3,1,201,40,6,14,4
+Real Medleys Cherry Almond Pecan,Quaker,17,middle,4.69,56,240,7,1,40,41,3,15,5
+Reese's Puffs,General Mills,11.5,middle_top,4.99,29,120,3,0.5,160,22,1,9,2
+Rice Chex,General Mills,12,middle,5.29,27,100,0.5,0,220,23,1,2,2
+Rice Krispies,Kelloggs,12,bottom,4.99,33,130,0,0,160,29,0,4,2
+Shredded Wheat Original Big Biscuit,Post,15,bottom,4.99,51,170,1,0,0,41,7,0,6
+Shredded Wheat Original Spoon Size,Post,18,middle_top,5.59,60,210,1.5,0,0,49,8,0,7
+Smart Start,Kelloggs,17.5,middle,4.99,64,240,1,0,260,56,3,18,5
+Special K Chocolate Almond,Kelloggs,12.7,middle_top,4.99,42,160,2,0.5,230,34,3,11,3
+Special K Chocolatey Delight,Kelloggs,13.1,middle_top,4.99,42,170,3,2.5,250,34,3,13,3
+Special K Fruit and Yogurt,Kelloggs,12.5,bottom_middle,4.99,42,160,1,0.5,190,36,3,13,3
+Special K Original,Kelloggs,12,bottom_middle,4.99,39,150,0.5,0,270,29,0,5,7
+Special K Red Berries,Kelloggs,11.2,bottom_middle,4.99,39,140,0.5,0,250,34,3,11,3
+Special K Vanilla Almond,Kelloggs,12.4,middle,4.99,40,150,1.5,0,220,33,3,11,3
+Strawberry Krispies,Kelloggs,11.5,bottom,4.99,32,120,0,0,125,28,0,9,2
+Total,General Mills,10.6,top,4.99,30,110,0.5,0,140,25,3,5,2
+Trix,General Mills,10.7,middle_top,4.79,31,120,1.5,0,150,27,1,10,1
+Vanilla Chex,General Mills,12.1,middle_top,5.29,30,120,2.5,0,190,24,1,6,1
+Wheat Chex,General Mills,14,middle_top,5.29,47,160,1,0,270,39,6,5,5
+Wheaties,General Mills,15.8,bottom,5.99,27,100,0.5,0,180,23,3,4,2
+Wild Berry Fruit Loops,Kelloggs,10.1,middle_top,4.99,29,110,0.5,0,150,26,3,10,2
