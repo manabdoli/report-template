@@ -20,11 +20,11 @@ knitr::opts_chunk$set(echo = TRUE)
 # The above line sets the default for all code chunks to 'echo', which means show the codes and the results in the final document. 
 ```
 
-# Introduction
+## Introduction
 
-The goal of this document is to show what you may need to generate a document using an R Markdown, a file with Rmd extension. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The goal of this document is to show how RMarkdown can use used to create reproducible documents in HTML, PDF, and MS Word formats. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-## Prerequisites
+### Prerequisites
 
 To be able to use R Markdown, an installation of R software is essential; use one of these [CRAN Mirrors](https://cran.r-project.org/mirrors.html) to find an appropriate installation file.
 
@@ -52,13 +52,13 @@ install.packages(c('evaluate', 'digest', 'highr', 'markdown', 'yaml',
 
 When these are installed, RStudio shows the **Knit** button on top of the script editor window. The *knit* button can be used to start the process of converting an Rmd file into a HTML, PDF or MS Word file. 
 
-# Capabilities
+## Capabilities
 
 The above section of this document presented examples of including R codes, adding hyperlink, and creating a document structure with text headings using `#` and `##` marks.
 
 In the rest of this document, examples of other capabilities of R Markdown are shown. In these examples, it is assumed that the document is generated in Rstudio.
 
-## Adding an Image
+### Adding an Image
 
 The following image shows the folder structure used for this lab-template:
 
@@ -68,13 +68,13 @@ This Rmd file is located in `R` folder, image files used here (like the one abov
 
 Instead of embedding an image, a link to it can be provided; here is a link to the same [Folder Strucrure image](../img/FolderStructure.png).
 
-## Adding formula
+### Adding formula
 
 Simple LaTeX commands can be used as inline formulas, like $\hat y = b_0 + b_1 x$, or displayed formulas $$\bar x = \sum_{i=1}^n \frac{x_i}{n}.$$
 
 Images of formulas, be it produced by online tools (like [atomurl.net/math](http://atomurl.net/math/)) or handwritten, could be a quick substitute for typing equations for novices.
 
-## Data Structure and Summaries
+### Data Structure and Summaries
 
 There are many internal datasets in R that can be used right away; for example, `cars` contains the information on speed and stopping distance of some cars from 1977. Here is how to show the structure of the dataset:
 
@@ -88,7 +88,7 @@ and its summaries:
 summary(cars)
 ```
 
-## Including Plots
+### Including Plots
 
 Another example of an internal dataset is `pressure` that contains vapor pressure of mercury as a function of temperature. The following code chunk shows how a plot can be produced while printing of the code is prevented by adding `echo=FALSE` option.
 
@@ -96,7 +96,7 @@ Another example of an internal dataset is `pressure` that contains vapor pressur
 plot(pressure)
 ```
 
-## Reading Data
+### Reading Data
 
 When an external is needed to be used, R can read data from a local file; for example:
 
@@ -113,18 +113,19 @@ y = read.csv(file = 'https://www.openintro.org/data/csv/bac.csv',
 
 ```
 
-# Conclusion
+## Conclusion
 
 R markdown is a flexible and powerful tool for generating reproducible documents.
 
 This tool can produce reports in HTML, PDF and even (perhaps) MS Word formats. However, 
 
+A new way to create reproducible documents is **Quarto** file format. You may choose that file format when creating a new file in RStudio. Here is where you can learn more about [Quatro](https://quarto.org/).
 
 ```{r, include=FALSE}
 # The following backward slashes are added to create extra line at the end of a document. This can help when viewing an HTML file. 
 ```
 
- 
+
 
 \
 
