@@ -1,0 +1,184 @@
+---
+title: "Term Project 1"
+author: "Mansour Abdoli, PhD"
+format: revealjs
+editor: visual
+---
+
+# Project Definition
+
+## Project Idea
+
+-   Main Question(s)
+
+    -   At least two Questions
+
+    -   At least one involving two variables
+
+    -   At least uses a different parameter
+
+-   Importance of the Questions
+
+-   Population(s) of Interest
+
+## Data
+
+-   Structure of the data
+
+    -   Case (Study unit, Subject, ...)
+
+    -   Variables and Variable Types
+
+        -   At least two categorical
+
+        -   At least two numerical
+
+-   Include Part of Data
+
+    -   Top View of Important Variables
+
+-   Source of the Data
+
+## Formulating Question(s)
+
+-   For each Question:
+
+    -   Type of Question:
+
+        -   Estimating/Test of Hypothesis
+
+    -   Response Variable
+
+    -   Explanatory Variable if required
+
+    -   Parameter of Interest
+
+# Data Exploration
+
+## Descriptive Statistics
+
+-   Statistics Summary for Response Variable (and Explanatory Variables)
+
+    -   Include a table
+
+-   Graphs for Response Variable (and Explanatory Variables)
+
+    -   Include a graph
+
+-   Summary Statistics for Interaction of Response and Explanatory Variables (if applicable)
+
+    -   Include a table and a graph
+
+## Remarks on Exploratory Analysis
+
+-   For each Question:
+
+    -   Possible Answers to the Questions
+
+    -   Which Answers are Supported by the Exploratory Analysis
+
+    -   Can the result be generalized
+
+        -   Sampling Method
+
+        -   Possible Biases
+
+# Statistical Inference
+
+## Minimum Requirements
+
+-   Perform at least one from each of the followings:
+
+    -   Estimating
+
+    -   Test of Hypothesis
+
+-   Perform at least one of the followings:
+
+    -   Power Analysis
+
+    -   Sample Size Calculation.
+
+## Confidence Intervals
+
+-   State your question as a confidence interval question.
+
+-   Show your work
+
+    -   Software Input or Manual Calculation
+
+-   Interpret the result
+
+    -   In the context of the problem
+
+-   Comment on usefulness of the method used
+
+    -   Use graphs and statistics created in Exploratory step
+
+## Test of Hypothesis
+
+-   State your question as a Test of Hypothesis
+
+-   Show your work:
+
+    -   Software Input or Manual Calculations
+
+-   Interpret the results
+
+    -   In the context of the problem
+
+<!-- -->
+
+-   Comment on usefulness of the method used
+
+    -   Use graphs and statistics created in Exploratory step
+
+## Power or Sample Size Analysis
+
+-   Check the assumptions
+
+-   Determine the Desired Performance Measure
+
+    -   Margin of Error
+
+    -   Power
+
+-   Show your work:
+
+    -   Software Input or Manual Calculations
+
+<!-- -->
+
+-   Interpret the results
+
+    -   In the context of the problem
+
+# Report
+
+## Additional Analysis
+
+-   Include A linear Regression Analysis
+
+    -   State your Question
+
+    -   Identify the Response and Explanatory Variables
+
+    -   Perform the Analysis
+
+        -   Show your work
+
+    -   Interpret the Results
+
+        -   In the context of the problem
+
+## Final Report
+
+-   Use proper Headings
+
+    -   To comply with accessibility requirements, do not use Formatting
+
+-   Include all table and graphs
+
+-   Write concise sentences; avoid lengthy explanations
+
+-   Use data and your results to make conclusions
