@@ -1,5 +1,5 @@
 ---
-title: "Term Project 1"
+title: "Term Project"
 author: "Mansour Abdoli, PhD"
 format: revealjs
 editor: visual
@@ -15,7 +15,7 @@ editor: visual
 
     -   At least one involving two variables
 
-    -   At least uses a different parameter
+    -   At least one uses a different parameter
 
 -   Importance of the Questions
 
@@ -35,7 +35,7 @@ editor: visual
 
 -   Include Part of Data
 
-    -   Top View of Important Variables
+    -   Rguroo View of Important Variables
 
 -   Source of the Data
 
@@ -73,9 +73,9 @@ editor: visual
 
 -   For each Question:
 
-    -   Possible Answers to the Questions
+    -   What Answer is Supported by the Exploratory Analysis
 
-    -   Which Answers are Supported by the Exploratory Analysis
+        -   Consider Possible Answers to the Questions
 
     -   Can the result be generalized
 
@@ -127,8 +127,6 @@ editor: visual
 
     -   In the context of the problem
 
-<!-- -->
-
 -   Comment on usefulness of the method used
 
     -   Use graphs and statistics created in Exploratory step
@@ -146,8 +144,6 @@ editor: visual
 -   Show your work:
 
     -   Software Input or Manual Calculations
-
-<!-- -->
 
 -   Interpret the results
 
@@ -173,9 +169,11 @@ editor: visual
 
 ## Final Report
 
--   Use proper Headings
+-   Comply with Minimum Accessibility Requirements
 
-    -   To comply with accessibility requirements, do not use Formatting
+    -   Use Proper Headings Styles
+
+    -   Do not Use Formatting for Headings
 
 -   Include all table and graphs
 
